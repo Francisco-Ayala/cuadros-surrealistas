@@ -1,12 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuadros Surrealistas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ONÍRICA | Galería de Arte Surrealista</title>
+    <!-- Tipografías de Google Fonts: Cinzel (editorial) y Space Grotesk (moderna) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cuadros Surrealistas</h1>
+
+    <!-- Fondo ambiental con formas líquidas animadas -->
+    <div class="ambient-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Barra de navegación estilo cristal -->
+    <header class="navbar">
+        <a href="#" class="logo">ONÍRICA<span>.ART</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#galeria">Obras</a></li>
+                <li><a href="#manifiesto">Manifiesto</a></li>
+                <li><a href="#contacto" class="nav-cta">Adquirir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero (Portada) -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subtitle">COLECCIÓN EXCLUSIVA 2026</span>
+            <h1 class="glitch-title" data-text="DONDE EL SUEÑO SE VUELVE LIENZO">
+                DONDE EL SUEÑO <br> SE VUELVE LIENZO
+            </h1>
+            <p>Piezas surrealistas de edición limitada creadas para desafiar la percepción de tus espacios. Cada cuadro es una ventana hacia lo imposible.</p>
+            <div class="hero-buttons">
+                <a href="#galeria" class="btn-primary">Explorar Galería</a>
+                <a href="https://wa.me/595981905180?text=Hola%20ONÍRICA,%20me%20interesa%20conocer%20más%20sobre%20sus%20cuadros%20surrealistas." target="_blank" class="btn-secondary">Consulta Privada</a>
+            </div>
+        </div>
+
+        <!-- Elemento visual flotante surrealista -->
+        <div class="hero-visual">
+            <div class="portal-frame">
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80" alt="Arte Abstracto Surrealista">
+                <div class="portal-ring"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cinta infinita animada (Marquee) -->
+    <div class="marquee-container">
+        <div class="marquee-track">
+            <span>ARTE SURREALISTA • PIEZAS ÚNICAS • EDICIÓN LIMITADA • ENVÍOS INTERNACIONALES • ARTE SURREALISTA • PIEZAS ÚNICAS • EDICIÓN LIMITADA • ENVÍOS INTERNACIONALES • </span>
+        </div>
+    </div>
+
+    <!-- Galería de Obras -->
+    <section id="galeria" class="gallery-section">
+        <div class="section-header">
+            <h2>OBRAS DISPONIBLES</h2>
+            <p>Haz clic en cualquier obra para inspeccionar sus detalles o solicitarla directamente.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Obra 1 -->
+            <article class="art-card">
+                <div class="art-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80" alt="El Tiempo Líquido">
+                    <div class="art-overlay">
+                        <a href="#modal-1" class="btn-inspect">Inspeccionar Obra</a>
+                    </div>
+                </div>
+                <div class="art-info">
+                    <div>
+                        <h3>El Tiempo Líquido</h3>
+                        <span class="art-specs">Óleo sobre lienzo • 120 x 90 cm</span>
+                    </div>
+                    <a href="https://wa.me/595981905180?text=Hola,%20me%20interesa%20la%20obra%20'El%20Tiempo%20Líquido'" target="_blank" class="btn-wa-mini">Consultar</a>
+                </div>
+            </article>
+
+            <!-- Obra 2 -->
+            <article class="art-card featured-card">
+                <div class="badge">PIEZA ESTRELLA</div>
+                <div class="art-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=800&q=80" alt="Arquitectura del Subconsciente">
+                    <div class="art-overlay">
+                        <a href="#modal-2" class="btn-inspect">Inspeccionar Obra</a>
+                    </div>
+                </div>
+                <div class="art-info">
+                    <div>
+                        <h3>Arquitectura del Subconsciente</h3>
+                        <span class="art-specs">Técnica mixta • 150 x 100 cm</span>
+                    </div>
+                    <a href="https://wa.me/595981905180?text=Hola,%20me%20interesa%20la%20obra%20'Arquitectura%20del%20Subconsciente'" target="_blank" class="btn-wa-mini">Consultar</a>
+                </div>
+            </article>
+
+            <!-- Obra 3 -->
+            <article class="art-card">
+                <div class="art-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&w=800&q=80" alt="Ecos del Vacío">
+                    <div class="art-overlay">
+                        <a href="#modal-3" class="btn-inspect">Inspeccionar Obra</a>
+                    </div>
+                </div>
+                <div class="art-info">
+                    <div>
+                        <h3>Ecos del Vacío</h3>
+                        <span class="art-specs">Acrílico y pan de oro • 100 x 100 cm</span>
+                    </div>
+                    <a href="https://wa.me/595981905180?text=Hola,%20me%20interesa%20la%20obra%20'Ecos%20del%20Vacío'" target="_blank" class="btn-wa-mini">Consultar</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modales interactivos 100% CSS (Usando :target) -->
+    <div id="modal-1" class="css-modal">
+        <a href="#galeria" class="modal-backdrop"></a>
+        <div class="modal-box">
+            <a href="#galeria" class="close-modal">&times;</a>
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80" alt="El Tiempo Líquido">
+            <div class="modal-details">
+                <h3>El Tiempo Líquido</h3>
+                <p class="specs">Óleo sobre lienzo de algodón • 120 x 90 cm • Certificado de autenticidad incluido.</p>
+                <p class="desc">Una exploración visual sobre cómo la memoria distorsiona los recuerdos pasados, fundiendo colores vibrantes en formas imposibles.</p>
+                <a href="https://wa.me/595981905180?text=Hola,%20quisiera%20reservar%20o%20consultar%20el%20precio%20de%20'El%20Tiempo%20Líquido'" target="_blank" class="btn-primary">Solicitar por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-2" class="css-modal">
+        <a href="#galeria" class="modal-backdrop"></a>
+        <div class="modal-box">
+            <a href="#galeria" class="close-modal">&times;</a>
+            <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=800&q=80" alt="Arquitectura del Subconsciente">
+            <div class="modal-details">
+                <h3>Arquitectura del Subconsciente</h3>
+                <p class="specs">Técnica mixta y pigmentos minerales • 150 x 100 cm • Pieza única 1/1.</p>
+                <p class="desc">Estructuras geométricas que desafían la gravedad en un paisaje onírico de tonos cálidos y sombras profundas.</p>
+                <a href="https://wa.me/595981905180?text=Hola,%20quisiera%20reservar%20o%20consultar%20el%20precio%20de%20'Arquitectura%20del%20Subconsciente'" target="_blank" class="btn-primary">Solicitar por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-3" class="css-modal">
+        <a href="#galeria" class="modal-backdrop"></a>
+        <div class="modal-box">
+            <a href="#galeria" class="close-modal">&times;</a>
+            <img src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&w=800&q=80" alt="Ecos del Vacío">
+            <div class="modal-details">
+                <h3>Ecos del Vacío</h3>
+                <p class="specs">Acrílico y detalles en pan de oro de 24k • 100 x 100 cm.</p>
+                <p class="desc">Minimalismo surrealista donde el espacio negativo cobra vida propia y dialoga con la luz de la habitación.</p>
+                <a href="https://wa.me/595981905180?text=Hola,%20quisiera%20reservar%20o%20consultar%20el%20precio%20de%20'Ecos%20del%20Vacío'" target="_blank" class="btn-primary">Solicitar por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Manifiesto -->
+    <section id="manifiesto" class="manifesto-section">
+        <div class="manifesto-card">
+            <span class="subtitle">NUESTRA FILOSOFÍA</span>
+            <h2>"La realidad es solo el boceto; el surrealismo es la obra terminada."</h2>
+            <p>No vendemos decoración convencional. Creamos piezas conversacionales hechas a mano que transforman paredes vacías en portales hacia otra dimensión. Cada obra se entrega enmarcada y lista para colgar.</p>
+        </div>
+    </section>
+
+    <!-- Sección Final de Contacto -->
+    <footer id="contacto" class="footer-cta">
+        <h2>¿LISTO PARA TRANSFORMAR TU ESPACIO?</h2>
+        <p>Escríbenos directamente para recibir nuestro catálogo completo en PDF, asesoría de espacios o encargar una obra personalizada.</p>
+        <a href="https://wa.me/595981905180?text=Hola%20ONÍRICA,%20me%20gustaría%20recibir%20información%20sobre%20sus%20cuadros." target="_blank" class="btn-whatsapp-hero">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+            Hablar por WhatsApp
+        </a>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ONÍRICA ART GALLERY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp siempre visible -->
+    <a href="https://wa.me/595981905180?text=Hola%20ONÍRICA,%20vengo%20de%20su%20página%20web%20y%20quiero%20consultar%20por%20un%20cuadro." target="_blank" class="floating-wa" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+        <span class="wa-tooltip">¿Te gustó alguna obra? ¡Escríbenos!</span>
+    </a>
+
 </body>
 </html>
